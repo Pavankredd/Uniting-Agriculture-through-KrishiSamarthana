@@ -1,2 +1,7 @@
-# Uniting-Agriculture-through-KrishiSamarthana
-Uniting Agriculture through KrishiSamarthana is a web-based platform designed to help farmers and agricultural professionals manage farming operations efficiently. It provides essential data on pest control, soil health, seed selection, crop sampling, and market rates, enabling data-driven decision-making for better productivity.
+# plant-disease-prediction-cnn-deep-leanring-project
+This repository is about building an Image classifier CNN with Python on Plant Disease Prediction.
+
+Kaggle Dataset Link: https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset
+
+Trained Model Link: [[https://drive.google.com/file/d/1i466c4XOs048Q54EPCqgzoG8zWcARnrj/view?usp=sharing](https://drive.google.com/file/d/1rKh-IElSdHTqax7XdfSdZTn-r8T_qWPf/view?usp=sharing)](https://drive.google.com/file/d/1rKh-IElSdHTqax7XdfSdZTn-r8T_qWPf/view?usp=drive_link)https://drive.google.com/file/d/1rKh-IElSdHTqax7XdfSdZTn-r8T_qWPf/view?usp=drive_link
+

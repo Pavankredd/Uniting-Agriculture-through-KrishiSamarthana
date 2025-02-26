@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pest Management Solutions</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+        color: #333;
+    }
+    p {
+        color: #666;
+    }
+    .advantages, .disadvantages {
+        margin-bottom: 20px;
+    }
+    .advantages h2, .disadvantages h2 {
+        color: #007bff;
+    }
+    .advantages ul, .disadvantages ul {
+        list-style-type: disc;
+        margin-left: 20px;
+    }
+    .advantages li, .disadvantages li {
+        margin-bottom: 5px;
+    }
+    h1, h2 {
+        color: #333;
+    }
+    p {
+        color: #666;
+    }
+    .form {
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    select {
+        margin-bottom: 10px;
+    }
+    button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+    #pest-solution {
+        margin-top: 20px;
+    }
+    .aa {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.aa:hover {
+  background-color: #45a049;
+}
+</style>
+</head>
+<body>
+    <button class="aa"><a href="indexx.html">Home</a></button>
+
+<div class="container">
+    <h1>Pest Management Solutions</h1>
+    
+    <div class="form">
+        <label for="pest-type">Select Pest Type:</label>
+        <select id="pest-type">
+            <option value="organic">Organic</option>
+            <option value="inorganic">Inorganic</option>
+        </select>
+
+        <label for="pest-severity">Select Pest Severity:</label>
+        <select id="pest-severity">
+            <option value="mild">Mild</option>
+            <option value="severe">Severe</option>
+        </select>
+
+        <button onclick="calculatePestControl()">Calculate Pest Control</button>
+    </div>
+
+    <div id="pest-solution"></div>
+
+    <div class="container">
+        <h1>Pest Management Solutions</h1>
+        
+        <div class="advantages">
+            <h2>Organic Pest Management Solutions</h2>
+            <p>Advantages:</p>
+            <ul>
+                <li>Environmentally friendly</li>
+                <li>Safer for humans and pets</li>
+                <li>Sustainable</li>
+                <li>Less likely to cause resistance</li>
+            </ul>
+            <p>Disadvantages:</p>
+            <ul>
+                <li>Slower acting</li>
+                <li>Limited effectiveness</li>
+                <li>Require more frequent application</li>
+                <li>Can be more expensive</li>
+            </ul>
+        </div>
+    
+        <div class="disadvantages">
+            <h2>Inorganic Pest Management Solutions</h2>
+            <p>Advantages:</p>
+            <ul>
+                <li>Fast acting</li>
+                <li>Broad-spectrum</li>
+                <li>Cost-effective</li>
+                <li>Easy to apply</li>
+            </ul>
+            <p>Disadvantages:</p>
+            <ul>
+                <li>Environmental concerns</li>
+                <li>Health risks</li>
+                <li>Risk of resistance</li>
+                <li>Disrupt beneficial organisms</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        function calculatePestControl() {
+            var pestType = document.getElementById('pest-type').value;
+            var pestSeverity = document.getElementById('pest-severity').value;
+            var pestSolution;
+
+            if (pestType === 'organic') {
+                if (pestSeverity === 'severe') {
+                    pestSolution = 'Consider combining organic methods for better control.';
+                } else {
+                    pestSolution = 'Organic pest management methods are suitable for your situation.';
+                }
+            } else {
+                if (pestSeverity === 'severe') {
+                    pestSolution = 'You may need to use inorganic pesticides to control the pests quickly.';
+                } else {
+                    pestSolution = 'Inorganic pesticides can provide fast control of pests in your situation.';
+                }
+            }
+
+            document.getElementById('pest-solution').textContent = pestSolution;
+        }
+    </script>
+</div>
+</body>
+</html>
